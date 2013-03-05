@@ -2,6 +2,8 @@
 
 This project demonstrates how to use AMD loaders (in this case require.js) and Backbone together happily. Require.js works as normal, and this runs fine in both `buster server` and `buster static`.
 
+The buster.js config is the important bit - [test/buster.js](test/buster.js) - we don't have to do anything special for require.js to work.
+
 The one know issue is undefined test names, due to an unfixed ticket in buster itself: https://github.com/busterjs/buster/issues/238.
 
 It also demonstrates how to use Backbone.js with this setup, using require.js's shims config to correctly load in the non-AMD underscore.js and zepto.
