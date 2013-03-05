@@ -43,9 +43,11 @@ testCase("SanityTest",[
     }
   });
 });
+```
 
 This is how it works (in `test/test_helper.js`) - no magic:
 
+```javascript
 window.testCase = function(name,deps,fn) {
   // first define the test case synchronously
   buster.testCase(name, function(run){
