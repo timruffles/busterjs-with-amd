@@ -9,8 +9,9 @@ config["Browser tests"] = {
     "js/main.js"
   ],
   resources: [
-    // serve all modules' so requirejs can request them - avoiding any
-    // http://requirejs.org/docs/errors.html#mismatch errors
+    // serve all our modules so requirejs can request them - avoiding any
+    // 'mismatched anonymous define' errors
+    // http://requirejs.org/docs/errors.html#mismatch 
     "js/**/*.js"
   ],
   tests: [
